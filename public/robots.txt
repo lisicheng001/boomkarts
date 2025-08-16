@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
 Sitemap: https://boomkarts.com/sitemap.xml

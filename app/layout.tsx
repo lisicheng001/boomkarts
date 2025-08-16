@@ -26,10 +26,13 @@ export const metadata: Metadata = {
   creator: "Boom Karts",
   publisher: "Boom Karts",
   robots: "index, follow",
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+  },
   openGraph: {
     title: "Boom Karts - Super Fun Racing Game for Kids!",
     description: "🏎️ Join the most exciting kart racing adventure! Race, jump, and have amazing fun with Boom Karts!",
-    url: "https://boomkarts.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://boomkarts.com",
     siteName: "Boom Karts",
     type: "website",
   },
@@ -39,9 +42,9 @@ export const metadata: Metadata = {
     description: "🏎️ Join the most exciting kart racing adventure! Race, jump, and have amazing fun!",
   },
   alternates: {
-    canonical: "https://boomkarts.com",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://boomkarts.com",
   },
-    generator: 'v0.app'
+  generator: "Next.js",
 }
 
 export default function RootLayout({

@@ -45,6 +45,10 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://boomkarts.com",
   },
   generator: "Next.js",
+  other: {
+    sitemap: "/sitemap.xml",
+    robots: "/robots.txt",
+  },
 }
 
 export default function RootLayout({
@@ -54,6 +58,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${workSans.variable} ${openSans.variable} antialiased`}>
+      <head>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <meta name="robots" content="index, follow" />
+      </head>
       <body className="font-sans">{children}</body>
     </html>
   )

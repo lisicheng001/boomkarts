@@ -16,8 +16,8 @@ export default function SitemapPage() {
       description: "Get help with playing Boom Karts and troubleshooting",
     },
     {
-      title: "🗺️ Sitemap",
-      url: "/sitemap",
+      title: "🗺️ Site Map",
+      url: "/site-map",
       description: "Find all pages on our website easily",
     },
   ]

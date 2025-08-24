@@ -1,3 +1,15 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Boom Karts - Super Fun Racing Game for Kids!",
+  description:
+    "🏎️ Join the most exciting kart racing adventure! Race, jump, and have amazing fun with Boom Karts - the coolest online racing game for kids and families!",
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://boomkarts.com",
+  },
+  robots: "index, follow",
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50">

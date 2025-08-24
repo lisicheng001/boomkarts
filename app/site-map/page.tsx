@@ -1,3 +1,14 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Site Map - Boom Karts Racing Game",
+  description: "Find all pages on the Boom Karts website easily. Navigate to game, about us, help, and more sections.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://boomkarts.com"}/site-map`,
+  },
+  robots: "index, follow",
+}
+
 export default function SitemapPage() {
   const pages = [
     {
